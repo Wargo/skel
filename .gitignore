@@ -1,0 +1,35 @@
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+nbproject
+
+#ctags files, used by the vim tags plugin, and cakemate
+tags
+
+# Git svn jik
+.svn
+
+# Never add these (well, *maybe* the editor file)
+config/core.php
+config/database.php
+config/editor.php
+tmp/*
+
+# files and img (c)ontent folders are where webroot-cached versions go for uploaded files
+uploads/*
+
+# webroot css, js, cache or other files should be added explicitly
+webroot/*

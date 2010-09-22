@@ -1,0 +1,51 @@
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+div#header h1 {
+	float: left;
+}
+div#header a {
+	color: #fff;
+	text-decoration: none;
+}
+div#header a:hover {
+	color: #ccc;
+	text-decoration: underline;
+}
+ul.menu {
+	float: right;
+}
+ul.menu li {
+	display:inline;
+}
+div.form {
+	border-left: none;
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	max-width: 400px;
+}
+form {
+	margin-right: inherit;
+	text-align: left;
+	width: inherit;
+}
+body#Users.register div.form {
+	max-width: 600px;
+}
+form div.floater {
+	clear: none;
+	float: left;
+	padding-left: 0;
+	padding-right: 0;
+	width: 48%;
+}
+form div.floaterLast {
+	float: right;
+}
