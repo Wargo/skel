@@ -7,12 +7,15 @@ Make use of this repo like so:
 
 # Dependencies
 
-This empty app assume the existance of the following plugins
+This empty app assume the existance of the following plugins:
 
-* Mi
-* Mi_asset
-* Mi_email
-* Mi_enums
-* Mi_panel
-* Mi_settings
-* Mi_users
+* mi
+* mi_asset
+* mi_email
+* mi_enums
+* mi_panel
+* mi_settings
+* mi_users
+
+And this vendor 
+* mi_js
