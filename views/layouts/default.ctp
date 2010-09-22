@@ -6,7 +6,7 @@
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 	<?php echo $this->element('head', compact('title_for_layout', 'scripts_for_layout')); ?>
-	<body id="<?php echo $this->name; ?>" class="<?php echo $this->params['action']; ?>">
+	<body id="<?php echo $this->name; ?>" class="<?php echo $this->action; ?>">
 		<div id="container">
 			<cake:nocache><?php echo $this->element('header'); ?></cake:nocache>
 			<div id="content">
