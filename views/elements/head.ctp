@@ -3,6 +3,8 @@
 	<title><?php echo htmlspecialchars($title_for_layout); ?></title>
 	<?php
 	echo $html->meta('icon');
+	echo $html->meta('description', '');
+	echo $html->meta('author', '');
 	$stripNamed = array(
 		'page' => false,
 		'fields' => false,
@@ -16,15 +18,16 @@
 	echo $html->meta('canonical', am($this->passedArgs, $stripNamed));
 	if (isset ($asset)) {
 		echo $asset->css(array(
+			'boilerplate',
 			'cake.generic',
 			'default',
 			'/js/theme/jquery.ui',
-			'jquery.gritter',
+			'/js/gritter/jquery.gritter',
 		));
 		echo $asset->out('css');
 		$asset->js(array(
 			'jquery',
-			'jquery.gritter',
+			'gritter/jquery.gritter',
 			'jquery.blockUI',
 			'jquery.mi.dialogs',
 			'default',
@@ -39,12 +42,8 @@
 		array('title' => __('Recent Updates', true))
 	);
 	echo $scripts_for_layout;
-	?>
-	<!--[if IE 6]>
-	<?php echo $html->css('ie/6.css'); ?>
-	<![endif]-->
 
-	<!--[if IE 7]>
-	<?php echo $html->css('ie/7.css'); ?>
-	<![endif]-->
+	// All JavaScript is at the end of the page, except for Modernizr which enables HTML5 elements & feature detects
+	?>
+  	<script src="<?php echo $this->Html->url('/js/modernizr.js') ?>"></script>
 </head>
