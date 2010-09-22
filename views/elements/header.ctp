@@ -1,5 +1,5 @@
 <div id='header' class='clearfix'>
-<?php if ($this->params['url']['url'] === '/'): ?>
+<?php if ($this->params['url']['url'] === '/' || empty($title_for_layout)): ?>
 	<h1><?php echo $html->link(APP_DIR, '/'); ?></h1>
 <?php else: ?>
 	<h1><?php echo $html->link(APP_DIR, '/') . ' - ' . $title_for_layout ?></h1>

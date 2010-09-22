@@ -75,6 +75,7 @@ class AppError extends ErrorHandler {
 		header("HTTP/1.0 500 Internal Server Error");
 		$params['uuid'] = String::uuid();
 		$this->log($params, 'server_error');
+		$this->controller->layout = 'fatal_error';
 		$this->controller->set(am(array(
 			'code' => '500',
 			'name' => __('Server Error', true),
