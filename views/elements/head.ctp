@@ -19,9 +19,12 @@
 			'cake.generic',
 			'default',
 			'/js/theme/jquery.ui',
+			'jquery.gritter',
 		));
 		echo $asset->out('css');
 		$asset->js(array(
+			'jquery',
+			'jquery.gritter',
 			'jquery.blockUI',
 			'jquery.mi.dialogs',
 			'default',
