@@ -1,9 +1,17 @@
 # Skel. App skeleton for a new app
 
-Make use of this repo like so:
+This repository is intented to be used as a template for new projects, i.e. you'd ordinarily make use of this repo like so:
 
 	cd www/apps
 	cake bake newproject -skel /path/to/this/repo
+
+# Functionality
+
+It's pretty basic, but includes:
+
+* Basic user management (register, forgotten password, administration)
+* An admin panel
+* example usage for each of the dependent plugins
 
 # Dependencies
 
