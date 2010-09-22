@@ -11,6 +11,7 @@ This empty app assume the existance of the following plugins
 
 * Mi
 * Mi_asset
+* Mi_email
 * Mi_enums
 * Mi_panel
 * Mi_settings
