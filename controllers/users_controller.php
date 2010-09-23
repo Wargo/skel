@@ -579,9 +579,10 @@ class UsersController extends AppController {
 				$message = __('Create a site admin user.', true);
 				$this->Session->setFlash($message);
 			}
-		} elseif (!MiCache::setting('Users.allowRegistrations')) {
+		} 
+		if (!MiCache::setting('Users.allowRegistrations')) {
 			$message = __('Registrations are disabled.', true);
-			$this->Session->setFlash($message, 'info');
+			$this->Session->setFlash($message);
 			$this->redirect('/');
 		}
 		if ($this->data) {
