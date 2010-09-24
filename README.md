@@ -26,4 +26,5 @@ This empty app assume the existance of the following plugins:
 * mi_users
 
 And this vendor 
+
 * mi_js
