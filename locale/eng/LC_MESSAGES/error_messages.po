@@ -1,114 +1,138 @@
 # LANGUAGE translation of Skel Application
 # Copyright 2010 Your Name <you@example.com>
 # --VERSIONS--
-#
-#, fuzzy
+# 
+# fuzzy
+# models/contact.php:40
+
 msgid ""
 msgstr ""
+
 "Project-Id-Version: skel-dfc079dca9bff30006b9c11fcfccd7f10608e7b2\n"
 "POT-Creation-Date: 2010-09-24 14:59+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
-"Last-Translator: Your Name <you@example.com>\n"
-"Language-Team:\n"
+"Last-Translator: Andy Dawson <andydawson76@gmail.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2;plural=n!=1;\n"
 "X-Poedit-Basepath: ../../../\n"
 
-#: models/contact.php:40
 msgid "Contact Body Missing"
-msgstr ""
+msgstr "Please enter a message"
 
 #: models/contact.php:40
+#, fuzzy
 msgid "Contact From Invalid"
-msgstr ""
+msgstr "Please let us know who you are"
 
 #: models/contact.php:40
+#, fuzzy
 msgid "Contact From Missing"
-msgstr ""
+msgstr "Please let us know who you are"
 
 #: models/contact.php:40
+#, fuzzy
 msgid "Contact Subject Missing"
-msgstr ""
+msgstr "What would you like to contact us about?"
 
 #: models/contact.php:40
+#, fuzzy
 msgid "Contact Url Invalid"
-msgstr ""
+msgstr "Please enter a valid url - or leave blank"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Confirm Not Same"
-msgstr ""
+msgstr "The confirmation doesn't match the entered password"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Current Password Not Current"
-msgstr ""
+msgstr "That isn't your current password"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Email Email"
-msgstr ""
+msgstr "Please enter a valid email address"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Email Is Unique"
-msgstr ""
+msgstr "That email is already in our system - did you forget your password?"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Email Missing"
-msgstr ""
+msgstr "Please enter your email address"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User First Name Missing"
-msgstr ""
+msgstr "What's your name?"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Last Name Missing"
-msgstr ""
+msgstr "What's your last name?"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Password Case"
-msgstr ""
+msgstr "Your password must contain one lower case, and one upper case character"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Password Contains Username"
-msgstr ""
+msgstr "Your password can't contain your username"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Password Missing"
-msgstr ""
+msgstr "Please enter your password"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Password Not Changed"
-msgstr ""
+msgstr "Your password has not been changed"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Password Number"
-msgstr ""
+msgstr "Your password must contain a number"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Password Special"
-msgstr ""
+msgstr "Your password must contain a special character such as $%&"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Password Too Short"
-msgstr ""
+msgstr "Your password is too short"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Tos Equal To"
-msgstr ""
+msgstr "You must agree to the site's terms and conditions to register"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Username Alpha Numeric"
-msgstr ""
+msgstr "Usernames can only be letters and numbers"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Username Is Unique"
-msgstr ""
+msgstr "Sorry, that username is already taken"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Username Missing"
-msgstr ""
+msgstr "Please enter a username"
 
 #: models/user.php:40
+#, fuzzy
 msgid "User Username Too Short"
-msgstr ""
-
+msgstr "Your username is too short"

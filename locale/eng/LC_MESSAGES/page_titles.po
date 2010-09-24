@@ -1,70 +1,83 @@
 # LANGUAGE translation of Skel Application
 # Copyright 2010 Your Name <you@example.com>
 # --VERSIONS--
-#
-#, fuzzy
+# 
+# fuzzy
+# controllers/contact_controller.php:109
+
 msgid ""
 msgstr ""
+
 "Project-Id-Version: skel-dfc079dca9bff30006b9c11fcfccd7f10608e7b2\n"
 "POT-Creation-Date: 2010-09-24 14:59+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
-"Last-Translator: Your Name <you@example.com>\n"
-"Language-Team:\n"
+"Last-Translator: Andy Dawson <andydawson76@gmail.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2;plural=n!=1;\n"
 "X-Poedit-Basepath: ../../../\n"
 
-#: controllers/contact_controller.php:109
 msgid "Contact :: Index"
-msgstr ""
+msgstr "not used"
 
 #: controllers/contact_controller.php:119
+#, fuzzy
 msgid "Contact :: Us"
-msgstr ""
+msgstr "Got a question? fill out the form"
 
 #: controllers/users_controller.php:334
+#, fuzzy
 msgid "Users :: Change Password"
-msgstr ""
+msgstr "Change your password"
 
 #: controllers/users_controller.php:353
+#, fuzzy
 msgid "Users :: Confirm"
-msgstr ""
+msgstr "Confirm your account"
 
 #: controllers/users_controller.php:376
+#, fuzzy
 msgid "Users :: Edit"
-msgstr ""
+msgstr "Edit your profile"
 
 #: controllers/users_controller.php:400
+#, fuzzy
 msgid "Users :: Forgotten Password"
-msgstr ""
+msgstr "Forgotten password 1/3"
 
 #: controllers/users_controller.php:423
+#, fuzzy
 msgid "Users :: Index"
-msgstr ""
+msgstr "not used"
 
 #: controllers/users_controller.php:435
+#, fuzzy
 msgid "Users :: Login"
-msgstr ""
+msgstr "Login"
 
 #: controllers/users_controller.php:471
+#, fuzzy
 msgid "Users :: Logout"
-msgstr ""
+msgstr "not used"
 
 #: controllers/users_controller.php:596
+#, fuzzy
 msgid "Users :: Post Login"
-msgstr ""
+msgstr "not used"
 
 #: controllers/users_controller.php:488
+#, fuzzy
 msgid "Users :: Profile"
-msgstr ""
+msgstr "Your profile"
 
 #: controllers/users_controller.php:516
+#, fuzzy
 msgid "Users :: Register"
-msgstr ""
+msgstr "Register"
 
 #: controllers/users_controller.php:558
+#, fuzzy
 msgid "Users :: Reset Password"
-msgstr ""
-
+msgstr "Forgotten password 3/3"
