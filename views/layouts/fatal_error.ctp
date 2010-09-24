@@ -33,7 +33,7 @@ echo $html->docType('xhtml-trans'); ?>
 			</div>
 			<div id="lowerMenu"><?php
 				if (Configure::read() && !empty($plugin)) {
-					echo $this->element('plugin_check');
+					echo $this->element('dev/plugin_check');
 				}
 				echo $content_for_layout;
 			?></div>
