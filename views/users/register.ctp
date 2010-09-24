@@ -15,9 +15,8 @@ $out .= $html->tag('div', $password . $confirm . $pwError, array('class' => 'inp
 
 $out .= $form->input('generate', array('fieldset' => false, 'type' => 'checkbox',
 	'label' => __('Generate me a random password (shown on the next screen)', true)));
-$tos = array('controller' => 'pages', 'action' => 'display', 'tos');
 $out .= $form->input('tos', array('fieldset' => false, 'type' => 'checkbox',
-	'label' => sprintf(__('I agree to the site %1$s', true), $html->link(__('terms of service', true), $tos, array('class' => 'popup modal noResize noDrag')))
+	'label' => sprintf(__('I agree to the site %1$s', true), $html->link(__('terms of service', true), '/tos', array('class' => 'popup modal noResize noDrag')))
 ));
 
 echo sprintf($html->tags['fieldset'], '', sprintf($html->tags['legend'], __('Registration', true)) . $out);
