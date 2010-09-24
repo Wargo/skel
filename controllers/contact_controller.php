@@ -124,10 +124,10 @@ class ContactController extends AppController {
 			$this->data['Contact']['ip'] = ip2long(RequestHandlerComponent::getClientIp());
 			$this->Contact->create($this->data);
 			if ($this->Contact->save()) {
-				$this->Session->setFlash(__d('mi', 'Your messages has been sent, thanks for your interest!', true));
+				$this->Session->setFlash(__('Your messages has been sent, thanks for your interest!', true));
 				return $this->_back();
 			}
-			$this->Session->setFlash(__d('mi', 'Please correct the errors below', true));
+			$this->Session->setFlash(__('Please correct the errors below', true));
 		} else {
 			$this->data['Contact'] = $this->passedArgs;
 		}
