@@ -1,29 +1,10 @@
 <?php
-/**
- * Mi Email
- *
- * A model based email solution to allow db events to trigger sending emails
- *
- * PHP version 5
- *
- * Copyright (c) 2008, Andy Dawson
- *
- * Licensed under The MIT License
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) 2008, Andy Dawson
- * @link          www.ad7six.com
- * @package       mi
- * @subpackage    mi.models
- * @since         v 1.0
- * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
- */
 
 /**
  * MiEmail class
  *
  * This class is used to configure the MiEmail behavior (smtp setings etc)
- * and to hanle auth if the standard emails controller is used
+ * and to handle auth if the standard emails controller is used
  *
  * @uses          AppModel
  * @package       mi
@@ -90,12 +71,12 @@ class MiEmail extends AppModel {
  * @access public
  */
 	public function isAuthorized($user, $controller, $action) {
-		if ($controller != 'Emails' || $action != 'read') {
+		if ($controller != 'MiEmail' || $action != 'read') {
 			debug('Email model isAuthorized has been called'); //@ignore
 			debug (Debugger::trace()); //@ignore
 			return false;
 		}
-		if ($user['User']['group'] == 'admin') {
+		if (strtolower($user['User']['group']) == 'admin') {
 			return true;
 		} elseif (!$this->id) {
 			return false;
