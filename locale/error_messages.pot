@@ -1,0 +1,114 @@
+# LANGUAGE translation of Skel Application
+# Copyright 2010 Your Name <you@example.com>
+# --VERSIONS--
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: skel-0739a775e3f81b7a04af5b7efa366ea88153e080\n"
+"POT-Creation-Date: 2010-09-24 14:56+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team:\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2;plural=n!=1;\n"
+"X-Poedit-Basepath: ../../../\n"
+
+#: models/contact.php:40
+msgid "Contact Body Missing"
+msgstr ""
+
+#: models/contact.php:40
+msgid "Contact From Invalid"
+msgstr ""
+
+#: models/contact.php:40
+msgid "Contact From Missing"
+msgstr ""
+
+#: models/contact.php:40
+msgid "Contact Subject Missing"
+msgstr ""
+
+#: models/contact.php:40
+msgid "Contact Url Invalid"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Confirm Not Same"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Current Password Not Current"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Email Email"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Email Is Unique"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Email Missing"
+msgstr ""
+
+#: models/user.php:40
+msgid "User First Name Missing"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Last Name Missing"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Password Case"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Password Contains Username"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Password Missing"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Password Not Changed"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Password Number"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Password Special"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Password Too Short"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Tos Equal To"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Username Alpha Numeric"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Username Is Unique"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Username Missing"
+msgstr ""
+
+#: models/user.php:40
+msgid "User Username Too Short"
+msgstr ""
+

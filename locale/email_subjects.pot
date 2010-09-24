@@ -1,0 +1,43 @@
+# LANGUAGE translation of Skel Application
+# Copyright 2010 Your Name <you@example.com>
+# --VERSIONS--
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: skel-0739a775e3f81b7a04af5b7efa366ea88153e080\n"
+"POT-Creation-Date: 2010-09-24 14:56+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team:\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2;plural=n!=1;\n"
+"X-Poedit-Basepath: ../../../\n"
+
+#: views/elements/email/html/contact/us.ctp:0
+#: views/elements/email/text/contact/us.ctp:0
+msgid "Contact Us"
+msgstr ""
+
+#: ../cake/libs/view/elements/email/html/default.ctp:0
+#: ../cake/libs/view/elements/email/text/default.ctp:0
+msgid "Default"
+msgstr ""
+
+#: views/elements/email/html/users/account_change.ctp:0
+#: views/elements/email/text/users/account_change.ctp:0
+msgid "Users Account Change"
+msgstr ""
+
+#: views/elements/email/html/users/forgotten_password.ctp:0
+#: views/elements/email/text/users/forgotten_password.ctp:0
+msgid "Users Forgotten Password"
+msgstr ""
+
+#: views/elements/email/html/users/welcome.ctp:0
+#: views/elements/email/text/users/welcome.ctp:0
+msgid "Users Welcome"
+msgstr ""
+

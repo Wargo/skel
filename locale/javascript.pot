@@ -1,0 +1,50 @@
+# LANGUAGE translation of Skel Application
+# Copyright 2010 Your Name <you@example.com>
+# --VERSIONS--
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: skel-0739a775e3f81b7a04af5b7efa366ea88153e080\n"
+"POT-Creation-Date: 2010-09-24 14:56+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team:\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2;plural=n!=1;\n"
+"X-Poedit-Basepath: ../../../\n"
+
+#: vendors/mi_js/code.js:18
+msgid "Code View"
+msgstr ""
+
+#: vendors/mi_js/jquery.mi.ajax.js:151
+msgid "Loading %s"
+msgstr ""
+
+#: vendors/mi_js/jquery.mi.ajax.js:45
+msgid "Loading..."
+msgstr ""
+
+#: vendors/mi_js/jquery.mi.lookups.js:30
+msgid "No results"
+msgstr ""
+
+#: vendors/mi_js/jquery.mi.dialogs.js:154;185
+msgid "Open in a new window (%s)"
+msgstr ""
+
+#: vendors/mi_js/code.js:14;23
+msgid "Plain Text View"
+msgstr ""
+
+#: vendors/mi_js/jquery.mi.lookups.js:31
+msgid "Searching..."
+msgstr ""
+
+#: vendors/mi_js/jquery.mi.lookups.js:29
+msgid "Start typing..."
+msgstr ""
+
