@@ -5,8 +5,8 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: skel-26bd96cc28b5fff36cdbad7f4aff772ac67d6969\n"
-"POT-Creation-Date: 2010-09-24 15:34+0200\n"
+"Project-Id-Version: skel-deb1b17b2cf16efe831d66e566f49146efc2b1d8\n"
+"POT-Creation-Date: 2010-09-24 18:18+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: Your Name <you@example.com>\n"
 "Language-Team:\n"
