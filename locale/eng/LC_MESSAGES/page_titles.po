@@ -1,24 +1,24 @@
 # LANGUAGE translation of Skel Application
 # Copyright 2010 Your Name <you@example.com>
 # --VERSIONS--
-# 
+#
 # fuzzy
 # controllers/contact_controller.php:109
-
 msgid ""
 msgstr ""
-
 "Project-Id-Version: skel-dfc079dca9bff30006b9c11fcfccd7f10608e7b2\n"
-"POT-Creation-Date: 2010-09-24 14:59+0200\n"
+"POT-Creation-Date: 2010-09-24 15:34+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: Andy Dawson <andydawson76@gmail.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2;plural=n!=1;\n"
 "X-Poedit-Basepath: ../../../\n"
 
+#: controllers/contact_controller.php:109
 msgid "Contact :: Index"
 msgstr "not used"
 
@@ -81,3 +81,7 @@ msgstr "Register"
 #, fuzzy
 msgid "Users :: Reset Password"
 msgstr "Forgotten password 3/3"
+
+#: views/users/reset_password.ctp:4
+msgid "forgotten password 3/3"
+msgstr ""

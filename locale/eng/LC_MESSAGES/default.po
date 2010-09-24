@@ -1,55 +1,292 @@
 # LANGUAGE translation of Skel Application
 # Copyright 2010 Your Name <you@example.com>
 # --VERSIONS--
-#
-#, fuzzy
+# 
+# fuzzy
+# config/enums.php:36 views/elements/header.ctp:15
+
 msgid ""
 msgstr ""
+
 "Project-Id-Version: skel-dfc079dca9bff30006b9c11fcfccd7f10608e7b2\n"
-"POT-Creation-Date: 2010-09-24 14:59+0200\n"
+"POT-Creation-Date: 2010-09-24 15:34+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
-"Last-Translator: Your Name <you@example.com>\n"
-"Language-Team:\n"
+"Last-Translator: Andy Dawson <andydawson76@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2;plural=n!=1;\n"
 "X-Poedit-Basepath: ../../../\n"
 
-#: app_error.php:81
-msgid "Server Error"
+#, fuzzy
+msgid "Admin"
 msgstr ""
 
-#: config/enums.php:9
-msgid "Html & Text Email"
+#: controllers/users_controller.php:292
+msgid "All Users matching the term \"%1$s\""
 msgstr ""
 
-#: config/enums.php:10
-msgid "Text Email"
+#: views/elements/email/html/contact/us.ctp:19
+msgid "All messages from this Ip"
 msgstr ""
 
-#: config/enums.php:11
-msgid "Html Email"
+#: views/elements/email/html/contact/us.ctp:21
+msgid "All messages from this sender"
 msgstr ""
 
-#: config/enums.php:15
-msgid "Problem with Email data"
+#: views/elements/confirm_action.ctp:6
+msgid "Are you sure you want to %1$s \"<em>%2$s</em>\" (%3$s id %4$s)?"
 msgstr ""
 
-#: config/enums.php:16
-msgid "Hasn't been sent yet"
+#: views/elements/confirm_action.ctp:9
+msgid "Are you sure you want to %1$s %2$s?"
 msgstr ""
 
-#: config/enums.php:17
-msgid "Sent"
+#: views/elements/email/html/contact/us.ctp:25
+msgid "Block Email"
+msgstr ""
+
+#: views/elements/email/html/contact/us.ctp:23
+msgid "Block Ip"
+msgstr ""
+
+#: views/users/change_password.ctp:5 views/users/edit.ctp:15
+#: views/users/profile.ctp:20
+msgid "Change your password"
 msgstr ""
 
 #: config/enums.php:18
 msgid "Connection problem, or email rejected"
 msgstr ""
 
+#: views/elements/header.ctp:9
+msgid "Contact"
+msgstr ""
+
 #: config/enums.php:22
 msgid "Contact Us"
+msgstr ""
+
+#: controllers/users_controller.php:520
+msgid "Create a site admin user."
+msgstr ""
+
+#: views/elements/email/html/contact/us.ctp:13
+msgid "Delete"
+msgstr ""
+
+#: views/elements/email/html/contact/us.ctp:15
+msgid "Edit"
+msgstr ""
+
+#: views/users/change_password.ctp:18 views/users/profile.ctp:19
+msgid "Edit your profile"
+msgstr ""
+
+#: views/errors/error404.ctp:7
+msgid "Error"
+msgstr ""
+
+#: views/errors/error500.ctp:8
+msgid "Error Reference: %s"
+msgstr ""
+
+#: views/users/change_password.ctp:12 views/users/register.ctp:17
+#: views/users/reset_password.ctp:23
+msgid "Generate me a random password (shown on the next screen)"
+msgstr ""
+
+#: config/enums.php:16
+msgid "Hasn't been sent yet"
+msgstr ""
+
+#: config/enums.php:9
+msgid "Html & Text Email"
+msgstr ""
+
+#: config/enums.php:11
+msgid "Html Email"
+msgstr ""
+
+#: views/users/register.ctp:19
+msgid "I agree to the site %1$s"
+msgstr ""
+
+#: views/errors/error500.ctp:2
+msgid "Internal Error"
+msgstr ""
+
+#: controllers/users_controller.php:322
+msgid "Invalid user"
+msgstr ""
+
+#: views/elements/header.ctp:21 views/users/login.ctp:4;18
+msgid "Login"
+msgstr ""
+
+#: views/elements/header.ctp:16
+msgid "Logout"
+msgstr ""
+
+#: config/enums.php:31
+msgid "Newsletter copy"
+msgstr ""
+
+#: controllers/users_controller.php:262
+msgid "No action defined, don't know what to do"
+msgstr ""
+
+#: config/enums.php:32
+msgid "Normal"
+msgstr ""
+
+#: views/errors/error404.ctp:2
+msgid "Not Found"
+msgstr ""
+
+#: controllers/users_controller.php:492
+msgid "Not implemented"
+msgstr ""
+
+#: views/elements/email/html/contact/us.ctp:8
+msgid "Not spam"
+msgstr ""
+
+#: controllers/users_controller.php:228
+msgid "Nothing selected, nothing to do"
+msgstr ""
+
+#: views/elements/email/html/contact/us.ctp:6
+#: views/users/change_password.ctp:16 views/users/edit.ctp:13
+#: views/users/profile.ctp:17
+msgid "Options"
+msgstr ""
+
+#: controllers/contact_controller.php:130
+msgid "Please correct the errors below"
+msgstr ""
+
+#: views/users/reset_password.ctp:8
+msgid "Please enter a new password"
+msgstr ""
+
+#: views/users/confirm.ctp:5
+msgid "Please enter your email token"
+msgstr ""
+
+#: views/errors/error500.ctp:7
+msgid "Please wait a few moments before trying again, if the problem persists - please contact us."
+msgstr ""
+
+#: views/elements/email/text/footer.ctp:5
+msgid "Powered by %s"
+msgstr ""
+
+#: config/enums.php:30
+msgid "Private (not web accessible)"
+msgstr ""
+
+#: controllers/users_controller.php:77
+msgid "Problem deleting User %1$s \"%2$s\""
+msgstr ""
+
+#: config/enums.php:15
+msgid "Problem with Email data"
+msgstr ""
+
+#: views/elements/email/html/contact/us.ctp:17
+msgid "Recalculate Junk score"
+msgstr ""
+
+#: views/elements/head.ctp:42
+msgid "Recent Updates"
+msgstr ""
+
+#: views/layouts/force_redirect.ctp:15
+msgid "Redirecting..."
+msgstr ""
+
+#: views/elements/header.ctp:20
+msgid "Register"
+msgstr ""
+
+#: views/users/register.ctp:22
+msgid "Registration"
+msgstr ""
+
+#: controllers/users_controller.php:525
+msgid "Registrations are disabled."
+msgstr ""
+
+#: views/users/login.ctp:16
+msgid "Remember me"
+msgstr ""
+
+#: controllers/users_controller.php:197
+msgid "Save did not succeed with no validation errors"
+msgstr ""
+
+#: views/elements/email/html/header.ctp:8;12
+msgid "See this message in your browser"
+msgstr ""
+
+#: config/enums.php:17
+msgid "Sent"
+msgstr ""
+
+#: views/elements/email/text/footer.ctp:4
+msgid "Sent from %s"
+msgstr ""
+
+#: app_error.php:81
+msgid "Server Error"
+msgstr ""
+
+#: controllers/users_controller.php:200
+msgid "Some or all updates did not succeed"
+msgstr ""
+
+#: views/elements/email/html/contact/us.ctp:10
+msgid "Spam"
+msgstr ""
+
+#: views/users/change_password.ctp:15 views/users/confirm.ctp:11
+#: views/users/edit.ctp:11 views/users/reset_password.ctp:27
+msgid "Submit"
+msgstr ""
+
+#: config/enums.php:10
+msgid "Text Email"
+msgstr ""
+
+#: views/errors/error404.ctp:8
+msgid "The requested address %s was not found on this server."
+msgstr ""
+
+#: views/errors/error500.ctp:6
+msgid "There's currently a server problem preventing your request from being processed."
+msgstr ""
+
+#: config/enums.php:37
+msgid "User"
+msgstr ""
+
+#: controllers/users_controller.php:96
+msgid "User \"%1$s\" updated"
+msgstr ""
+
+#: controllers/users_controller.php:75
+msgid "User %1$s \"%2$s\" deleted"
+msgstr ""
+
+#: controllers/users_controller.php:500;506
+msgid "User not found"
+msgstr ""
+
+#: controllers/users_controller.php:80;114
+msgid "User with id %1$s doesn't exist"
 msgstr ""
 
 #: config/enums.php:23
@@ -68,71 +305,6 @@ msgstr ""
 msgid "Users Welcome"
 msgstr ""
 
-#: config/enums.php:30
-msgid "Private (not web accessible)"
-msgstr ""
-
-#: config/enums.php:31
-msgid "Newsletter copy"
-msgstr ""
-
-#: config/enums.php:32
-msgid "Normal"
-msgstr ""
-
-#: config/enums.php:36
-#: views/elements/header.ctp:15
-msgid "Admin"
-msgstr ""
-
-#: config/enums.php:37
-msgid "User"
-msgstr ""
-
-#: controllers/contact_controller.php:127
-msgid "Your messages has been sent, thanks for your interest!"
-msgstr ""
-
-#: controllers/contact_controller.php:130
-msgid "Please correct the errors below"
-msgstr ""
-
-#: controllers/users_controller.php:75
-msgid "User %1$s \"%2$s\" deleted"
-msgstr ""
-
-#: controllers/users_controller.php:77
-msgid "Problem deleting User %1$s \"%2$s\""
-msgstr ""
-
-#: controllers/users_controller.php:80;114
-msgid "User with id %1$s doesn't exist"
-msgstr ""
-
-#: controllers/users_controller.php:96
-msgid "User \"%1$s\" updated"
-msgstr ""
-
-#: controllers/users_controller.php:108;384
-msgid "errors in form"
-msgstr ""
-
-#: controllers/users_controller.php:186
-msgid "Users updated"
-msgstr ""
-
-#: controllers/users_controller.php:197
-msgid "Save did not succeed with no validation errors"
-msgstr ""
-
-#: controllers/users_controller.php:200
-msgid "Some or all updates did not succeed"
-msgstr ""
-
-#: controllers/users_controller.php:228
-msgid "Nothing selected, nothing to do"
-msgstr ""
-
 #: controllers/users_controller.php:237
 msgid "Users deleted."
 msgstr ""
@@ -145,260 +317,74 @@ msgstr ""
 msgid "Users marked as not email verified."
 msgstr ""
 
-#: controllers/users_controller.php:262
-msgid "No action defined, don't know what to do"
-msgstr ""
-
-#: controllers/users_controller.php:292
-msgid "All Users matching the term \"%1$s\""
-msgstr ""
-
-#: controllers/users_controller.php:322
-msgid "Invalid user"
-msgstr ""
-
-#: controllers/users_controller.php:381
-msgid "profile updated"
-msgstr ""
-
-#: controllers/users_controller.php:405
-msgid "email missing"
+#: controllers/users_controller.php:186
+msgid "Users updated"
 msgstr ""
 
 #: controllers/users_controller.php:449
 msgid "Welcome back %1$s."
 msgstr ""
 
-#: controllers/users_controller.php:477
-msgid "now logged out"
+#: views/elements/header.ctp:13
+msgid "Your Profile"
 msgstr ""
 
-#: controllers/users_controller.php:492
-msgid "Not implemented"
-msgstr ""
-
-#: controllers/users_controller.php:500;506
-msgid "User not found"
-msgstr ""
-
-#: controllers/users_controller.php:520
-msgid "Create a site admin user."
-msgstr ""
-
-#: controllers/users_controller.php:525
-msgid "Registrations are disabled."
-msgstr ""
-
-#: views/elements/confirm_action.ctp:6
-msgid "Are you sure you want to %1$s \"<em>%2$s</em>\" (%3$s id %4$s)?"
-msgstr ""
-
-#: views/elements/confirm_action.ctp:9
-msgid "Are you sure you want to %1$s %2$s?"
-msgstr ""
-
-#: views/elements/confirm_action.ctp:14;15
-msgid "continue (%1$s)"
+#: controllers/contact_controller.php:127
+msgid "Your messages has been sent, thanks for your interest!"
 msgstr ""
 
 #: views/elements/confirm_action.ctp:17
 msgid "cancel (do nothing)"
 msgstr ""
 
-#: views/elements/head.ctp:42
-msgid "Recent Updates"
+#: views/elements/confirm_action.ctp:14;15
+msgid "continue (%1$s)"
 msgstr ""
 
-#: views/elements/header.ctp:7
-msgid "main"
+#: controllers/users_controller.php:405
+msgid "email missing"
 msgstr ""
 
-#: views/elements/header.ctp:9
-msgid "Contact"
-msgstr ""
-
-#: views/elements/header.ctp:13
-msgid "Your Profile"
-msgstr ""
-
-#: views/elements/header.ctp:16
-msgid "Logout"
-msgstr ""
-
-#: views/elements/header.ctp:20
-msgid "Register"
-msgstr ""
-
-#: views/elements/header.ctp:21
-#: views/users/login.ctp:4;18
-msgid "Login"
-msgstr ""
-
-#: views/elements/email/html/header.ctp:8;12
-msgid "See this message in your browser"
-msgstr ""
-
-#: views/elements/email/html/contact/us.ctp:6
-#: views/users/change_password.ctp:16
-#: views/users/edit.ctp:13
-#: views/users/profile.ctp:17
-msgid "Options"
-msgstr ""
-
-#: views/elements/email/html/contact/us.ctp:8
-msgid "Not spam"
-msgstr ""
-
-#: views/elements/email/html/contact/us.ctp:10
-msgid "Spam"
-msgstr ""
-
-#: views/elements/email/html/contact/us.ctp:13
-msgid "Delete"
-msgstr ""
-
-#: views/elements/email/html/contact/us.ctp:15
-msgid "Edit"
-msgstr ""
-
-#: views/elements/email/html/contact/us.ctp:17
-msgid "Recalculate Junk score"
-msgstr ""
-
-#: views/elements/email/html/contact/us.ctp:19
-msgid "All messages from this Ip"
-msgstr ""
-
-#: views/elements/email/html/contact/us.ctp:21
-msgid "All messages from this sender"
-msgstr ""
-
-#: views/elements/email/html/contact/us.ctp:23
-msgid "Block Ip"
-msgstr ""
-
-#: views/elements/email/html/contact/us.ctp:25
-msgid "Block Email"
-msgstr ""
-
-#: views/elements/email/text/footer.ctp:4
-msgid "Sent from %s"
-msgstr ""
-
-#: views/elements/email/text/footer.ctp:5
-msgid "Powered by %s"
-msgstr ""
-
-#: views/errors/error404.ctp:2
-msgid "Not Found"
-msgstr ""
-
-#: views/errors/error404.ctp:7
-msgid "Error"
-msgstr ""
-
-#: views/errors/error404.ctp:8
-msgid "The requested address %s was not found on this server."
-msgstr ""
-
-#: views/errors/error500.ctp:2
-msgid "Internal Error"
-msgstr ""
-
-#: views/errors/error500.ctp:6
-msgid "There's currently a server problem preventing your request from being processed."
-msgstr ""
-
-#: views/errors/error500.ctp:7
-msgid "Please wait a few moments before trying again, if the problem persists - please contact us."
-msgstr ""
-
-#: views/errors/error500.ctp:8
-msgid "Error Reference: %s"
-msgstr ""
-
-#: views/layouts/force_redirect.ctp:15
-msgid "Redirecting..."
-msgstr ""
-
-#: views/users/change_password.ctp:5
-#: views/users/edit.ctp:15
-#: views/users/profile.ctp:20
-msgid "Change your password"
-msgstr ""
-
-#: views/users/change_password.ctp:12
-#: views/users/register.ctp:17
-#: views/users/reset_password.ctp:21
-msgid "Generate me a random password (shown on the next screen)"
-msgstr ""
-
-#: views/users/change_password.ctp:15
-#: views/users/confirm.ctp:11
-#: views/users/edit.ctp:11
-#: views/users/reset_password.ctp:25
-msgid "Submit"
-msgstr ""
-
-#: views/users/change_password.ctp:18
-#: views/users/profile.ctp:19
-msgid "Edit your profile"
-msgstr ""
-
-#: views/users/confirm.ctp:1
-msgid "forgotten password 2/3"
-msgstr ""
-
-#: views/users/confirm.ctp:5
-msgid "Please enter your email token"
-msgstr ""
-
-#: views/users/confirm.ctp:9
-msgid "token"
-msgstr ""
-
-#: views/users/forgotten_password.ctp:1
-msgid "forgotten password 1/3"
-msgstr ""
-
-#: views/users/forgotten_password.ctp:16
+#: views/users/forgotten_password.ctp:15
 msgid "email or username"
 msgstr ""
 
-#: views/users/forgotten_password.ctp:18
-msgid "reset password"
+#: controllers/users_controller.php:108;384
+msgid "errors in form"
 msgstr ""
 
 #: views/users/login.ctp:9
 msgid "forgotten password"
 msgstr ""
 
-#: views/users/login.ctp:10
-#: views/users/register.ctp:23
+#: views/users/confirm.ctp:1
+msgid "forgotten password 2/3"
+msgstr ""
+
+#: views/elements/header.ctp:7
+msgid "main"
+msgstr ""
+
+#: controllers/users_controller.php:477
+msgid "now logged out"
+msgstr ""
+
+#: controllers/users_controller.php:381
+msgid "profile updated"
+msgstr ""
+
+#: views/users/forgotten_password.ctp:17
+msgid "reset password"
+msgstr ""
+
+#: views/users/login.ctp:10 views/users/register.ctp:23
 msgid "sign up"
-msgstr ""
-
-#: views/users/login.ctp:16
-msgid "Remember me"
-msgstr ""
-
-#: views/users/register.ctp:19
-msgid "I agree to the site %1$s"
 msgstr ""
 
 #: views/users/register.ctp:19
 msgid "terms of service"
 msgstr ""
 
-#: views/users/register.ctp:22
-msgid "Registration"
+#: views/users/confirm.ctp:9
+msgid "token"
 msgstr ""
-
-#: views/users/reset_password.ctp:1
-msgid "forgotten password 3/3"
-msgstr ""
-
-#: views/users/reset_password.ctp:6
-msgid "Please enter a new password"
-msgstr ""
-

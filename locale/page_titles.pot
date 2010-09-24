@@ -5,8 +5,8 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: skel-dfc079dca9bff30006b9c11fcfccd7f10608e7b2\n"
-"POT-Creation-Date: 2010-09-24 14:59+0200\n"
+"Project-Id-Version: skel-26bd96cc28b5fff36cdbad7f4aff772ac67d6969\n"
+"POT-Creation-Date: 2010-09-24 15:34+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: Your Name <you@example.com>\n"
 "Language-Team:\n"
@@ -66,5 +66,9 @@ msgstr ""
 
 #: controllers/users_controller.php:558
 msgid "Users :: Reset Password"
+msgstr ""
+
+#: views/users/reset_password.ctp:4
+msgid "forgotten password 3/3"
 msgstr ""
 
