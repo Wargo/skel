@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: skel-dfc079dca9bff30006b9c11fcfccd7f10608e7b2\n"
-"POT-Creation-Date: 2010-09-24 15:34+0200\n"
+"POT-Creation-Date: 2010-09-24 18:18+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: Andy Dawson <andydawson76@gmail.com>\n"
 "Language-Team: \n"
@@ -81,7 +81,3 @@ msgstr "Register"
 #, fuzzy
 msgid "Users :: Reset Password"
 msgstr "Forgotten password 3/3"
-
-#: views/users/reset_password.ctp:4
-msgid "forgotten password 3/3"
-msgstr ""
