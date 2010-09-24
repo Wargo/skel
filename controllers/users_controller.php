@@ -61,36 +61,6 @@ class UsersController extends AppController {
 	}
 
 /**
- * admin_add method
- *
- * @return void
- * @access public
- */
-	public function admin_add() {
-		if ($this->data) {
-			if ($this->User->saveAll($this->data)) {
-				$display = $this->User->display();
-				$this->Session->setFlash(sprintf(__('User "%1$s" added', true), $display));
-				return $this->_back();
-			} else {
-				$this->data = $this->User->data;
-				if (Configure::read()) {
-					foreach ($this->User->validationErrors as $i => &$error) {
-						if (is_array($error)) {
-							$error = implode($error, '<br />');
-						}
-					}
-					$this->Session->setFlash(implode($this->User->validationErrors, '<br />'));
-				} else {
-					$this->Session->setFlash(__('errors in form', true));
-				}
-			}
-		}
-		$this->_setSelects();
-		$this->render('admin_edit');
-	}
-
-/**
  * admin_delete method
  *
  * @param mixed $id null
@@ -198,48 +168,6 @@ class UsersController extends AppController {
 	}
 
 /**
- * admin_multi_add method
- *
- * @return void
- * @access public
- */
-	public function admin_multi_add() {
-		if ($this->data) {
-			$data = array();
-			foreach ($this->data as $key => $row) {
-				if (!is_numeric($key)) {
-					continue;
-				}
-				$data[$key] = $row;
-			}
-			if ($this->User->saveAll($data, array('validate' => 'first', 'atomic' => false))) {
-				$this->Session->setFlash(sprintf(__('Users added', true)));
-				$this->_back();
-			} else {
-				if (Configure::read()) {
-					foreach ($this->User->validationErrors as $i => &$error) {
-						if (is_array($error)) {
-							$error = implode($error, '<br />');
-						}
-					}
-					if($this->User->validationErrors) {
-						$this->Session->setFlash(implode($this->User->validationErrors, '<br />'));
-					} else {
-						$this->Session->setFlash(__('Save did not succeed with no validation errors', true));
-					}
-				} else {
-					$this->Session->setFlash(__('Some or all additions did not succeed', true));
-				}
-			}
-		} else {
-			$this->data = array('1' => array('User' => $this->User->create()));
-			$this->data[1]['User']['id'] = null;
-		}
-		$this->_setSelects();
-		$this->render('admin_multi_edit');
-	}
-
-/**
  * admin_multi_edit method
  *
  * @return void
@@ -295,32 +223,45 @@ class UsersController extends AppController {
 		if (!$this->data) {
 			$this->_back();
 		}
-		$ids = array_filter($this->data['User']);
+		$ids = array_keys(array_filter($this->data['User']));
 		if (!$ids) {
 			$this->Session->setFlash(__('Nothing selected, nothing to do', true));
 			$this->_back();
 		}
-		if($action === null) {
-			if (isset($_POST['deleteAll'])) {
-				$action = 'delete';
+		if (!$action && !empty($this->data['App']['multiAction'])) {
+			$action = $this->data['App']['multiAction'];
+		}
+
+		switch ($action) {
+			case 'deleteAll':
 				$message = __('Users deleted.', true);
-			} elseif (isset($_POST['editAll'])) {
+				$this->User->deleteAll(array('User.id' => $ids));
+				break;
+			case 'editAll':
 				$ids = array_keys(array_filter($this->data['User']));
 				return $this->redirect(array(
 					'action' => 'multi_edit',
 					'id' => '(' . implode($ids, ',') . ')'
 				));
-			} else {
+			case 'emailVerifiedAll':
+				$message = __('Users marked as email verified.', true);
+				$this->User->updateAll(
+					array('User.email_verified' => 1),
+					array('User.id' => $ids)
+				);
+				return $this->render('admin_view');
+				break;
+			case 'unEmailVerifiedAll':
+				$message = __('Users marked as not email verified.', true);
+				$this->User->updateAll(
+					array('User.email_verified' => 0),
+					array('User.id' => $ids)
+				);
+				break;
+			default:
 				$this->Session->setFlash(__('No action defined, don\'t know what to do', true));
 				$this->_back();
-			}
-		}
-		foreach($ids as $id => $do) {
-			switch($action) {
-				case 'delete':
-					$this->User->delete($id);
-					break;
-			}
+
 		}
 		$this->Session->setFlash($message);
 		$this->_back();
@@ -579,7 +520,7 @@ class UsersController extends AppController {
 				$message = __('Create a site admin user.', true);
 				$this->Session->setFlash($message);
 			}
-		} 
+		}
 		if (!MiCache::setting('Users.allowRegistrations')) {
 			$message = __('Registrations are disabled.', true);
 			$this->Session->setFlash($message);

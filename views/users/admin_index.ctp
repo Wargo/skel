@@ -43,13 +43,16 @@ foreach ($data as $i => $row) {
 ?>
 </table>
 <div class="buttonChoice">
-<p><?php __('For the selected  Users:') ?></p>
 <?php
-echo $form->submit(__('Delete', true), array('name' => 'deleteAll', 'div' => false));
-echo $form->submit(__('Edit', true), array('name' => 'editAll', 'div' => false));
-	echo $form->submit(__('Email Verified', true), array('name' => 'email_verifiedAll', 'div' => false));
-	echo $form->submit(__('Un Email Verified', true), array('name' => 'unEmail_verifiedAll', 'div' => false));
-//echo $form->submit(__('Add to clipboard', true), array('name' => 'clipAll', 'div' => false));
+$options = array(
+	'deleteAll' => __('Delete', true),
+	'editAll' => __('Edit', true),
+	//'clipAll' => __('Add to clipboard', true),
+	'emailVerifiedAll' => __('Mark Email Verified', true),
+	'unEmailVerifiedAll' => __('Mark Not Email Verified', true),
+);
+echo $form->input('App.multiAction', array('options' => $options, 'empty' => __('--choose--', true), 'label' => __('For the selected Users:', true)));
+echo $form->submit(__('Apply', true));
 echo $form->end();
 ?>
 </div>
