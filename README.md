@@ -9,9 +9,12 @@ This repository is intented to be used as a template for new projects, i.e. you'
 
 It's pretty basic, but includes:
 
-* Basic user management (register, forgotten password, administration)
+* User management (register, forgotten password, administration)
+* A contact form
 * An admin panel
 * example usage for each of the dependent plugins
+
+Obviously, you can delete anything you don't want to use
 
 # Dependencies
 

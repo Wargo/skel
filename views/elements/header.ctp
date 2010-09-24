@@ -5,6 +5,9 @@
 	<h1><?php echo $html->link(APP_DIR, '/') . ' - ' . $title_for_layout ?></h1>
 <?php endif;
 $menu->settings(__('main', true));
+$menu->add(array(
+	array('title' => __('Contact', true), 'url' => array('controller' => 'contact', 'action' => 'us'))
+));
 if ($session->check('Auth.User') && empty($isEmail)) {
 	$menu->add(array(
 		array('title' => __('Your Profile', true), 'url' => array('controller' => 'users', 'action' => 'profile')),
