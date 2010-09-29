@@ -1,5 +1,5 @@
 <?php
-Router::parseExtensions('rss', 'xml', 'ajax');
+Router::parseExtensions('rss', 'xml', 'ajax', 'json');
 
 Router::connect('/', array('controller' => 'forced', 'action' => 'error'));
 Router::connect('/admin', array('admin' => true, 'controller' => 'users', 'action' => 'index'));
