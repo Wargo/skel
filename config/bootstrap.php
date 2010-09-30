@@ -1,6 +1,7 @@
 <?php
 define('DEFAULT_LANGUAGE', 'eng');
 Configure::write('Redirect.model', 'Redirect');
+App::import('Vendor', 'Mi.MiCache');
 
 /**
  * If it's not development mode, route asset/media requests to a static subdomain.
