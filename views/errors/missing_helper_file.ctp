@@ -14,5 +14,5 @@ class <?php echo $helperClass;?> extends AppHelper {
 }
 ?&gt;
 </pre>
-<?php echo $this->element('trace', array('paths' => 'helpers'));
+<?php echo $this->element('dev/trace', array('paths' => 'helpers'));
 $this->layout = 'fatal_error';

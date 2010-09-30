@@ -21,5 +21,5 @@ class <?php echo $controller;?> extends AppController {
 }
 ?&gt;
 </pre>
-<?php echo $this->element('trace');
+<?php echo $this->element('dev/trace');
 $this->layout = 'error';

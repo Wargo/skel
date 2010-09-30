@@ -7,5 +7,5 @@
 	<strong>Error: </strong>
 	<?php echo sprintf('Confirm you have created the file : %s.', APP_DIR.DS.'config'.DS.'database.php');?>
 </p>
-<?php echo $this->element('trace');
+<?php echo $this->element('dev/trace');
 $this->layout = 'fatal_error';

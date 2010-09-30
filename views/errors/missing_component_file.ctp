@@ -14,5 +14,5 @@ class <?php echo $component;?>Component extends Object {<br />
 }
 ?&gt;
 </pre>
-<?php echo $this->element('trace', array('paths' => 'components'));
+<?php echo $this->element('dev/trace', array('paths' => 'components'));
 $this->layout = 'fatal_error';

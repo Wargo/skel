@@ -14,5 +14,5 @@ class <?php echo $behaviorClass;?> extends ModelBehavior {<br />
 }
 ?&gt;
 </pre>
-<?php echo $this->element('trace', array('paths' => 'behaviors'));
+<?php echo $this->element('dev/trace', array('paths' => 'behaviors'));
 $this->layout = 'fatal_error';

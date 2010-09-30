@@ -16,5 +16,5 @@ $db->cacheSources = ($Inst->cacheSources && $db->cacheSources);
 if ($db->isInterfaceSupported('listSources')) {
 	echo '<ul><li>' . implode($db->listSources(), '</li><li>') . '</li></ul>';
 }
-echo $this->element('trace');
+echo $this->element('dev/trace');
 $this->layout = 'error';

@@ -22,5 +22,5 @@ cake bake view <?php echo $controller;?> $action -theme <?php echo $theme;?>
 	<strong>Error: </strong>
 	<?php echo sprintf('Confirm you have created the file: %s', $file);?>
 </p>
-<?php echo $this->element('trace', array('paths' => 'views'));
+<?php echo $this->element('dev/trace', array('paths' => 'views'));
 $this->layout = 'error';

@@ -7,5 +7,5 @@
 	<strong>Error: </strong>
 	<?php echo sprintf('Confirm you have created the file: %s', "<em>" . $file . "</em>");?>
 </p>
-<?php echo $this->element('trace', array('paths' => 'views'));
+<?php echo $this->element('dev/trace', array('paths' => 'views'));
 $this->layout = 'fatal_error';

@@ -20,5 +20,5 @@ cake bake model <?php echo Inflector::singularize($controller);?> -theme <?php e
 
 cake bake controller <?php echo $controller;?> admin -theme <?php echo $theme;?>
 </pre>
-<?php echo $this->element('trace', array('paths' => 'controllers'));
+<?php echo $this->element('dev/trace', array('paths' => 'controllers'));
 $this->layout = 'error';
