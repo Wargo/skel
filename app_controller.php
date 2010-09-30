@@ -140,6 +140,9 @@ class AppController extends Controller {
 		$this->Auth->authorize = 'controller';
 		$this->Auth->loginAction = '/users/login';
 		$this->Auth->logoutRedirect = '/';
+		if (!$this->Auth->user()) {
+			$this->Auth->authError = __('Please login to continue', true);
+		}
 	}
 
 /**
