@@ -2,7 +2,7 @@
 /**
  * Global app object
  */
-	APP = (typeof APP == "undefined" ? {} : APP);
+	SKEL = (typeof SKEL == "undefined" ? {} : SKEL);
 
 	$('div.message').each(function() {
 		var message = {};

@@ -44,6 +44,11 @@
 	echo $scripts_for_layout;
 
 	// All JavaScript is at the end of the page, except for Modernizr which enables HTML5 elements & feature detects
+	// And the global SKEL (rename to name of app) object which dynamic scripts can write to, and static files can read from
 	?>
-  	<script src="<?php echo $this->Html->url('/js/modernizr.js') ?>"></script>
+	<script src="<?php echo $this->Html->url('/js/modernizr.js') ?>"></script>
+	<script type="text/javascript">
+		SKEL = {
+		};
+	</script>
 </head>
