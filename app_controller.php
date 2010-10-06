@@ -222,13 +222,19 @@ class AppController extends Controller {
 /**
  * isAuthorized method
  *
- * Simple example, if it's an admin request and the user isn't in the admin group deny. Otherwise - allow
+ * Simple example,
+ * if it's an admin user, no questions asked: allow,
+ * If it's not an admin request: allow,
+ * else these are not the droids you're looking for, deny.
  *
  * @return bool
  * @access public
  */
 	public function isAuthorized() {
-		if (isset($this->params['admin']) && $this->Auth->user('group') == 'admin') {
+		if ($this->Auth->user('group') == 'admin') {
+			return true;
+		}
+		if (empty($this->params['admin'])) {
 			return true;
 		}
 		return false;
