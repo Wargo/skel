@@ -515,13 +515,15 @@ class UsersController extends AppController {
  * @return void
  */
 	public function register() {
+		$override = false;
 		if (Configure::read()) {
 			if (!$this->User->find('count')) {
 				$message = __('Create a site admin user.', true);
 				$this->Session->setFlash($message);
+				$override = true;
 			}
 		}
-		if (!MiCache::setting('Users.allowRegistrations')) {
+		if (!$override && !MiCache::setting('Users.allowRegistrations')) {
 			$message = __('Registrations are disabled.', true);
 			$this->Session->setFlash($message);
 			$this->redirect('/');
