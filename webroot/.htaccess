@@ -18,8 +18,8 @@
 	# Some MCurry Love http://github.com/mcurry/html_cache/blob/master/extras/webroot.htaccess
 	RewriteCond %{REQUEST_METHOD} ^GET
 	RewriteCond %{HTTP_COOKIE} !^.*(CAKEPHP|CakeCookie).*$ [NC]
-	RewriteCond %{DOCUMENT_ROOT}/cache/$1/index.html -f
-	RewriteRule ^(.*)$ /cache/$1/index.html [L]
+	RewriteCond %{DOCUMENT_ROOT}/cache/%{HTTP_HOST}/$1/index.html -f
+	RewriteRule ^(.*)$ /cache/%{HTTP_HOST}/$1/index.html [L]
 
 	# Send to cake if the request isn't a file that exists in the webroot
 	RewriteCond %{REQUEST_FILENAME} !-f
