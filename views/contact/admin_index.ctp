@@ -11,7 +11,7 @@ $th = array(
 	$paginator->sort(__('Sent', true), 'created'),
 );
 echo $html->tableHeaders($th);
-foreach ($data as $row) {
+foreach ((array)$data as $row) {
 	extract($row);
 	$status = $MiEmail['status'];
 	if ($status == 'spam') {
