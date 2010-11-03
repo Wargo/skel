@@ -1,3 +1,9 @@
+<?php
+/**
+ * If you're login and password fields are not called username and password remember to change the field
+ * names here AND change the auth component config (see the book) so that it correctly hashes the password
+ */
+?>
 <div class="container form">
 <?php
 echo $form->create();

@@ -15,7 +15,7 @@ $th = array(
 	__('actions', true)
 );
 echo $html->tableHeaders($th);
-foreach ($data as $i => $row) {
+foreach ((array)$data as $i => $row) {
 	extract($row);
 
 	$actions = array(

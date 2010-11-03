@@ -1,3 +1,9 @@
+<?php
+/**
+ * If you're login and password fields are not called username and password remember to change the field
+ * names here AND change the auth component config (see the book) so that it correctly hashes the password
+ */
+?>
 <div class="container form">
 <?php
 if (empty($this->params['isAjax'])) {
@@ -9,6 +15,7 @@ echo $form->create();
 $after = '<p>' . $html->link(__('forgotten password', true), array('action' => 'forgotten_password')) .
 	' ' . $html->link(__('sign up', true), array('action' => 'register')) .
 	'</p>';
+
 echo $form->inputs(array(
 	'legend' => $legend,
 	'username',

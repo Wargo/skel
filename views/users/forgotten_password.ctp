@@ -1,3 +1,9 @@
+<?php
+/**
+ * If you're login and password fields are not called username and password remember to change the field
+ * names here AND change the auth component config (see the book) so that it correctly hashes the password
+ */
+?>
 <?php echo $this->set('title_for_layout', __('forgotten password 1/3', true)); ?>
 <p>
 	If you've forgotten your password you can reset it by submitting the form below
