@@ -10,7 +10,7 @@ foreach ($matches[0] as $match) {
 	$contents = str_replace($match, '', $contents);
 }
 preg_match_all('@<link\s*rel="stylesheet"[^>]*type="text/css"[^>]*href="([^"]*)"[^>]*/>@i',  $contents, $result, PREG_PATTERN_ORDER);
-App::import('Vendor', 'Mi.MiCompressor');
+App::import('Vendor', 'MiAsset.MiCompressor');
 $styles = '';
 foreach ($result[1] as $cssFile) {
 	$contents = str_replace($result[0], '', $contents);
