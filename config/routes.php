@@ -21,7 +21,7 @@ Router::connect('/cache/' . $random . '/lookup/:controller/*',
  * Serve images and files that look like app-generated requests via the media controller
  */
 /**
- * Forward missing media requests to the media serve funciton
+ * Forward missing media requests to the media serve function
  */
 Router::connect(
 	'/:mediaType/*',
@@ -30,7 +30,7 @@ Router::connect(
 );
 
 /**
- * Forward css and js requests to the asset serve funciton
+ * Forward css and js requests to the asset serve function
  */
 Router::connect(
 	'/:mediaType/*',
