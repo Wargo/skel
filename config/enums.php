@@ -22,6 +22,7 @@
  */
 $config = array(
 	'MiEmail.layout' => array(
+		'default'
 	),
 	'MiEmail.send_as' => array(
 		'both' => __('Html & Text Email', true),
@@ -37,7 +38,7 @@ $config = array(
 	'MiEmail.template' => array(
 		'contact/us' => __d('email_subjects', 'Contact Us', true),
 		'users/account_change' => __d('email_subjects', 'Users Account Change', true),
-		'users/forgotten_password' => __d('email_subjects', 'Users Forgotten Account Change', true),
+		'users/forgotten_password' => __d('email_subjects', 'Users Forgotten Password', true),
 		'users/new_token' => __d('email_subjects', 'Users New Token', true),
 		'users/welcome' => __d('email_subjects', 'Users Welcome', true),
 	),
