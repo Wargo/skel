@@ -4,7 +4,7 @@
  * names here AND change the auth component config (see the book) so that it correctly hashes the password
  */
 ?>
-<?php echo $this->set('title_for_layout', __('forgotten password 1/3', true)); ?>
+<?php echo $this->set('title_for_layout', __('Recuperar la contraseña 1/3', true)); ?>
 <p>
 	If you've forgotten your password you can reset it by submitting the form below
 </p>
@@ -19,9 +19,9 @@
 		if ($authFields['username'] == 'email') {
 			echo $form->input('email');
 		} else {
-			echo $form->input('email', array('label' => __('email or username', true)));
+			echo $form->input('email', array('label' => __('Email o nombre de usuario', true)));
 		}
-		echo $form->submit(__('reset password', true))  ;
+		echo $form->submit(__('Obtener nueva contraseña', true))  ;
 		echo $form->end();
 		?>
 </div>

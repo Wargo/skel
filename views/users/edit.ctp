@@ -8,10 +8,10 @@ echo $form->inputs(array(
 	'first_name' => array('div' => 'wide input text'),
 	'last_name' => array('div' => 'wide input text'),
 ));
-echo $form->end(__('Submit', true));
+echo $form->end(__('Enviar', true));
 
-$menu->settings(__('Options', true));
+$menu->settings(__('Opciones', true));
 $menu->add(array(
-	array('title' => __('Change your password', true), 'url' => array('action' => 'change_password')),
+	array('title' => __('Cambia tu contraseña', true), 'url' => array('action' => 'change_password')),
 ));
 ?></div>

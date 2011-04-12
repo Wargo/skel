@@ -72,12 +72,12 @@ class UsersController extends AppController {
 		if ($id && $this->User->exists()) {
 			$display = $this->User->display($id);
 			if ($this->User->delete($id)) {
-				$this->Session->setFlash(sprintf(__('User %1$s "%2$s" deleted', true), $id, $display));
+				$this->Session->setFlash(sprintf(__('Usuario %1$s "%2$s" borrado', true), $id, $display));
 			} else {
-				$this->Session->setFlash(sprintf(__('Problem deleting User %1$s "%2$s"', true), $id, $display));
+				$this->Session->setFlash(sprintf(__('Ha ocurrido un problema borrando el usuario %1$s "%2$s"', true), $id, $display));
 			}
 		} else {
-			$this->Session->setFlash(sprintf(__('User with id %1$s doesn\'t exist', true), $id));
+			$this->Session->setFlash(sprintf(__('El usuario con id %1$s no existe', true), $id));
 		}
 		return $this->_back();
 	}
@@ -93,7 +93,7 @@ class UsersController extends AppController {
 		if ($this->data) {
 			if ($this->User->saveAll($this->data)) {
 				$display = $this->User->display();
-				$this->Session->setFlash(sprintf(__('User "%1$s" updated', true), $display));
+				$this->Session->setFlash(sprintf(__('Usuario "%1$s" actualizado', true), $display));
 				return $this->_back();
 			} else {
 				$this->data = $this->User->data;
@@ -105,13 +105,13 @@ class UsersController extends AppController {
 					}
 					$this->Session->setFlash(implode($this->User->validationErrors, '<br />'));
 				} else {
-					$this->Session->setFlash(__('errors in form', true));
+					$this->Session->setFlash(__('Hay errores en el formulario', true));
 				}
 			}
 		} elseif ($id) {
 			$this->data = $this->User->read(null, $id);
 			if (!$this->data) {
-				$this->Session->setFlash(sprintf(__('User with id %1$s doesn\'t exist', true), $id));
+				$this->Session->setFlash(sprintf(__('El usuario con id %1$s no existe', true), $id));
 				$this->_back();
 			}
 		} else {
@@ -183,7 +183,7 @@ class UsersController extends AppController {
 				$data[$key] = $row;
 			}
 			if ($this->User->saveAll($data, array('validate' => 'first'))) {
-				$this->Session->setFlash(sprintf(__('Users updated', true)));
+				$this->Session->setFlash(sprintf(__('Usuario actualizado', true)));
 			} else {
 				if (Configure::read()) {
 					foreach ($this->User->validationErrors as $i => &$error) {
@@ -194,10 +194,10 @@ class UsersController extends AppController {
 					if($this->User->validationErrors) {
 						$this->Session->setFlash(implode($this->User->validationErrors, '<br />'));
 					} else {
-						$this->Session->setFlash(__('Save did not succeed with no validation errors', true));
+						$this->Session->setFlash(__('No se ha guardado y no tiene errores de validación', true));
 					}
 				} else {
-					$this->Session->setFlash(__('Some or all updates did not succeed', true));
+					$this->Session->setFlash(__('Alguno o todos los cambios no han sido guardados', true));
 				}
 			}
 			$this->params['paging'] = $this->Session->read('User.paging');
@@ -225,7 +225,7 @@ class UsersController extends AppController {
 		}
 		$ids = array_keys(array_filter($this->data['User']));
 		if (!$ids) {
-			$this->Session->setFlash(__('Nothing selected, nothing to do', true));
+			$this->Session->setFlash(__('Nada seleccionado', true));
 			$this->_back();
 		}
 		if (!$action && !empty($this->data['App']['multiAction'])) {
@@ -234,7 +234,7 @@ class UsersController extends AppController {
 
 		switch ($action) {
 			case 'deleteAll':
-				$message = __('Users deleted.', true);
+				$message = __('Usuarios eliminados', true);
 				$this->User->deleteAll(array('User.id' => $ids));
 				break;
 			case 'editAll':
@@ -244,7 +244,7 @@ class UsersController extends AppController {
 					'id' => '(' . implode($ids, ',') . ')'
 				));
 			case 'emailVerifiedAll':
-				$message = __('Users marked as email verified.', true);
+				$message = __('Usuarios marcados como email verificado', true);
 				$this->User->updateAll(
 					array('User.email_verified' => 1),
 					array('User.id' => $ids)
@@ -252,14 +252,14 @@ class UsersController extends AppController {
 				return $this->render('admin_view');
 				break;
 			case 'unEmailVerifiedAll':
-				$message = __('Users marked as not email verified.', true);
+				$message = __('Usuarios marcados como email no verificado', true);
 				$this->User->updateAll(
 					array('User.email_verified' => 0),
 					array('User.id' => $ids)
 				);
 				break;
 			default:
-				$this->Session->setFlash(__('No action defined, don\'t know what to do', true));
+				$this->Session->setFlash(__('No has definido ninguna acción', true));
 				$this->_back();
 
 		}
@@ -289,7 +289,7 @@ class UsersController extends AppController {
 			$this->redirect(array('action' => 'index'));
 		}
 		$conditions = $this->User->searchConditions($term, isset($this->passedArgs['extended']));
-		$this->Session->setFlash(sprintf(__('All Users matching the term "%1$s"', true), htmlspecialchars($term)));
+		$this->Session->setFlash(sprintf(__('Todos los usuarios que coinciden con el término "%1$s"', true), htmlspecialchars($term)));
 		$this->data = $this->paginate($conditions);
 		$this->_setSelects();
 		$this->render('admin_index');
@@ -319,7 +319,7 @@ class UsersController extends AppController {
 	public function admin_view($id = null) {
 		$this->data = $this->User->read(null, $id);
 		if(!$this->data) {
-			$this->Session->setFlash(__('Invalid user', true));
+			$this->Session->setFlash(__('Usuario inválido', true));
 			return $this->_back();
 		}
 	}
@@ -378,10 +378,10 @@ class UsersController extends AppController {
 		if ($this->data) {
 			$this->data['User']['id'] = $this->Auth->user('id');
 			if ($this->User->save($this->data, true, array('email', 'first_name', 'last_name'))) {
-				$this->Session->setFlash(__('profile updated', true));
+				$this->Session->setFlash(__('Perfil actualizado', true));
 				return $this->_back();
 			} else {
-				$this->Session->setFlash(__('errors in form', true));
+				$this->Session->setFlash(__('Errores en el formulario', true));
 			}
 		} else {
 			$this->data = $this->User->read(null, $this->Auth->user('id'));
@@ -402,7 +402,7 @@ class UsersController extends AppController {
 		if ($this->data) {
 			$email = $this->data['User']['email'];
 			if (!$email) {
-				$this->Session->setFlash(__('email missing', true));
+				$this->Session->setFlash(__('Falta el email', true));
 				return;
 			}
 			list($return, $message) = $this->User->forgottenPassword($this->data['User']['email']);
@@ -446,7 +446,7 @@ class UsersController extends AppController {
 					$this->Cookie->write('User.token', $token, true, '+2 weeks');
 				}
 				$display = $this->User->display();
-				$this->Session->setFlash(sprintf(__('Welcome back %1$s.', true), $display));
+				$this->Session->setFlash(sprintf(__('Bienvenido de nuevo %1$s.', true), $display));
 				if ($this->RequestHandler->isAjax() && !empty($this->params['refresh'])) {
 					return $this->_back(null, true);
 				}
@@ -474,7 +474,7 @@ class UsersController extends AppController {
 			$this->SwissArmy->loadComponent('Cookie');
 			$this->Cookie->delete('User');
 			$this->Session->destroy();
-			$this->Session->setFlash(__('now logged out', true));
+			$this->Session->setFlash(__('¡Hasta pronto!', true));
 		}
 		$this->redirect($this->Auth->logout());
 	}
@@ -489,7 +489,7 @@ class UsersController extends AppController {
 	public function profile($username = null) {
 		if ($username && $username != $this->Auth->user($this->Auth->fields['username'])) {
 			/* Temp */
-			$this->Session->setFlash(__('Not implemented', true));
+			$this->Session->setFlash(__('No implementado', true));
 			return $this->_back();
 			/* Temp End */
 			$id = $this->User->field('id', array($this->Auth->fields['username'] => $username));
@@ -497,13 +497,13 @@ class UsersController extends AppController {
 			$id = $this->Auth->user('id');
 		}
 		if (!$id) {
-			$this->Session->setFlash(__('User not found', true));
+			$this->Session->setFlash(__('Usuario no encontrado', true));
 			return $this->_back();
 		}
 		$conditions['User.id'] = $id;
 		$this->data = $this->User->find('first', compact('conditions', 'contain'));
 		if (!$this->data) {
-			$this->Session->setFlash(__('User not found', true));
+			$this->Session->setFlash(__('Usuario no encontrado', true));
 			return $this->_back();
 		}
 	}
@@ -524,7 +524,7 @@ class UsersController extends AppController {
 			}
 		}
 		if (!$override && !MiCache::setting('Users.allowRegistrations')) {
-			$message = __('Registrations are disabled.', true);
+			$message = __('Registros deshabilitados temporalmente', true);
 			$this->Session->setFlash($message);
 			$this->redirect('/');
 		}

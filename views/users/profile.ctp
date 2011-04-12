@@ -14,8 +14,8 @@ extract ($data);
 if ($User['id'] !== $this->Session->read('Auth.User.id')) {
 	return;
 }
-$menu->settings(__('Options', true));
+$menu->settings(__('Opciones', true));
 $menu->add(array(
-	array('title' => __('Edit your profile', true), 'url' => array('action' => 'edit')),
-	array('title' => __('Change your password', true), 'url' => array('action' => 'change_password')),
+	array('title' => __('Edita tu perfil', true), 'url' => array('action' => 'edit')),
+	array('title' => __('Cambia tu contraseña', true), 'url' => array('action' => 'change_password')),
 ));

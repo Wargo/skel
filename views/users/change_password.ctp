@@ -8,19 +8,19 @@
 <?php
 echo $form->create();
 echo $form->inputs(array(
-	'legend' => __('Change your password', true),
+	'legend' => __('Cambia tu contraseña', true),
 	'username' => array('type' => 'hidden'),
 	'current_password' => array('type' => 'password'),
 	'password',
 	'confirm' => array('type' => 'password'),
 	'generate' => array(
 		'type' => 'checkbox',
-		'label' => __('Generate me a random password (shown on the next screen)', true)
+		'label' => __('Genera una contraseña aleatoria (se mostrará en la siguiente pantalla)', true)
 	),
 ));
-echo $form->end(__('Submit', true));
-$menu->settings(__('Options', true));
+echo $form->end(__('Enviar', true));
+$menu->settings(__('Opciones', true));
 $menu->add(array(
-	array('title' => __('Edit your profile', true), 'url' => array('action' => 'edit')),
+	array('title' => __('Edita tu perfil', true), 'url' => array('action' => 'edit')),
 ));
 ?></div>

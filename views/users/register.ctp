@@ -20,12 +20,12 @@ $pwError = $form->error('password');
 $out .= $html->tag('div', $password . $confirm . $pwError, array('class' => 'input clearFix'));
 
 $out .= $form->input('generate', array('fieldset' => false, 'type' => 'checkbox',
-	'label' => __('Generate me a random password (shown on the next screen)', true)));
+	'label' => __('Generar una contraseña aleatoria (se mostrará en la siguiente pantalla)', true)));
 $out .= $form->input('tos', array('fieldset' => false, 'type' => 'checkbox',
-	'label' => sprintf(__('I agree to the site %1$s', true), $html->link(__('terms of service', true), '/tos', array('class' => 'popup modal noResize noDrag')))
+	'label' => sprintf(__('Estoy de acuerdo con los %1$s', true), $html->link(__('términos de uso', true), '/tos', array('class' => 'popup modal noResize noDrag')))
 ));
 
-echo sprintf($html->tags['fieldset'], '', sprintf($html->tags['legend'], __('Registration', true)) . $out);
-echo $form->end(__('sign up', true));
+echo sprintf($html->tags['fieldset'], '', sprintf($html->tags['legend'], __('Registro', true)) . $out);
+echo $form->end(__('Regístrame', true));
 ?>
 </div>
