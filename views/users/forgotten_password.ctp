@@ -6,12 +6,10 @@
 ?>
 <?php echo $this->set('title_for_layout', __('Recuperar la contraseña 1/3', true)); ?>
 <p>
-	If you've forgotten your password you can reset it by submitting the form below
+	<?php echo __('Si has olvidado tu contraseña, puedes reiniciarla enviando este formulario', true); ?>
 </p>
 <p>
-	We'll send you an email that you must read to proceed, this helps to confirm that it's
-	really you requesting to change your password. All you need to do is check the mail - click
-	the link and enter a new password to regain access to your account.
+	<?php echo __('Te enviaremos un email que debes leer para continuar, esto confirma que realmente eres tú el que quieres cambiar la contraseña. Todo lo que necesitas es leer el email, seguir el enlace, rellenar algunos datos de verificación y escribir tu nueva contraseña.', true); ?>
 </p>
 <div class="container form">
 <?php
