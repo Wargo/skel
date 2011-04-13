@@ -4,9 +4,9 @@
 	</ul>
 <?php
 if ($this->action === 'admin_add') {
-	$this->set('title_for_layout', __('New User', true));
+	$this->set('title_for_layout', __('Nuevo usuario', true));
 } else {
-	$this->set('title_for_layout', __('Edit User', true));
+	$this->set('title_for_layout', __('Editar usuario', true));
 }
 ?>
 <div class="form-container">
@@ -24,7 +24,7 @@ echo $form->inputs(array(
 	'last_name' => array('div' => 'wide input text'),
 ));
 echo '</div>';
-echo $form->end(__('Submit', true));
+echo $form->end(__('Guardar', true));
 $asset->codeBlock('
 	$(document).ready(function() {
 		$("#tabWrap").tabs();

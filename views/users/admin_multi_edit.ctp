@@ -1,15 +1,15 @@
 <?php
-$this->set('title_for_layout', __('Users', true));
+$this->set('title_for_layout', __('Usuarios', true));
 echo $form->create(); ?>
 <table>
 <?php
 $th = array(
-	__d('field_names', 'User Username', true),
-	__d('field_names', 'User First Name', true),
-	__d('field_names', 'User Last Name', true),
-	__d('field_names', 'User Email', true),
-	__d('field_names', 'User Group', true),
-	__d('field_names', 'User Email Verified', true),
+	__d('field_names', 'Nombre de usuario', true),
+	__d('field_names', 'Nombre', true),
+	__d('field_names', 'Apellidos', true),
+	__d('field_names', 'Email', true),
+	__d('field_names', 'Grupo', true),
+	__d('field_names', 'Email verificado', true),
 );
 echo $html->tableHeaders($th);
 foreach ($data as $i => $row) {
@@ -37,7 +37,7 @@ foreach ($data as $i => $row) {
 ?>
 </table>
 <?php
-echo $form->end(__('Submit', true));
+echo $form->end(__('Guardar', true));
 if (isset($paginator) && $this->action !== 'admin_multi_add') {
 	echo $this->element('paging');
 }

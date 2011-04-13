@@ -12,14 +12,14 @@
 	<?php echo __('Te enviaremos un email que debes leer para continuar, esto confirma que realmente eres tú el que quieres cambiar la contraseña. Todo lo que necesitas es leer el email, seguir el enlace, rellenar algunos datos de verificación y escribir tu nueva contraseña.', true); ?>
 </p>
 <div class="container form">
-<?php
-		echo $form->create();
-		if ($authFields['username'] == 'email') {
-			echo $form->input('email');
-		} else {
-			echo $form->input('email', array('label' => __('Email o nombre de usuario', true)));
-		}
-		echo $form->submit(__('Obtener nueva contraseña', true))  ;
-		echo $form->end();
-		?>
+	<?php
+	echo $form->create();
+	if ($authFields['username'] == 'email') {
+		echo $form->input('email');
+	} else {
+		echo $form->input('email', array('label' => __('Email o nombre de usuario', true)));
+	}
+	echo $form->submit(__('Obtener nueva contraseña', true))  ;
+	echo $form->end();
+	?>
 </div>
