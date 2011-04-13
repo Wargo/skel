@@ -1,14 +1,17 @@
 <?php
 extract ($data['User']) ?>
-<p>Hello <?php echo trim($first_name); ?>,</p>
+<p><?php echo __('Hola', true) . ' ' . trim($first_name); ?>,</p>
 
-<p>Thanks for registering (Username: <?php echo $username?>)!</p>
+<p><?php echo __('Gracias por registrarte', true) . ' ' . $username . '!'; ?></p>
 <br />
-<p>To verify your email and fully enable your account please <?php
-echo $html->link('confirm your account', $html->url(array('admin' => false, 'controller' => 'users', 'action' => 'confirm', $token), true)); ?>
- within the next 24 hours:</p>
+<p><?php
+echo __('Para verificar tu email y darte acceso total a tu cuenta, por favor', true) . ' ';
+echo $html->link(__('confirma tu cuenta', true), $html->url(array('admin' => false, 'controller' => 'users', 'action' => 'confirm', $token), true)) . ' ' . __('en las siguientes 24 horas', true);
+?></p>
 <br />
-<p>If the above link does not work correctly your token is :</p>
+<p>
+<?php echo __('Si el enlace de arriba no funcionar correctamente, tu código es:', true); ?>
+</p>
 <p><?php echo $token ?></p>
 <br />
-<p>If you did not request an account with us please ignore this email.</p>
+<p><?php echo __('Si no has creado una cuenta con nosotros, por favor, ignora este email', true); ?></p>

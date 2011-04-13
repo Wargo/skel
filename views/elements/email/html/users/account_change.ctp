@@ -1,17 +1,19 @@
 <?php
 extract($data);
 extract ($data['User']) ?>
-<p>Hello <?php echo trim($first_name); ?>,</p>
+<p><?php echo __('Hola', true) . ' ' . trim($first_name); ?>,</p>
 
-<p>This messages is to confirm that your <?php echo $change ?> has been changed.</p>
+<p><?php echo __('Este email es para confirmar que tu', true) . ' ' . $change . ' ' __('ha cambiado', true); ?></p>
 <?php if ($oldValue) : ?>
-<p>Your old <?php echo $change ?> (<?php echo $oldValue ?>), is nolonger valid for your account.</p>
+	<p><?php echo __('Tu anterior', true) . ' ' . $change ?> (<?php echo $oldValue ?>), <?php echo __('ya no se podrá usar en tu cuenta.', true); ?></p>
 <?php endif; ?>
 <br />
-<p>If you have not changed your <?php echo $change ?> - please <?php echo $html->link('contact us', array(
+<p><?php
+echo __('Si no has cambiado tu', true) . ' ' . $change . ', ' . __('por favor', true) . ' ' . $html->link(__('contacta con nosotros', true), array(
 	'controller' => 'contact',
 	'action' => 'us',
 	'category' => '!',
 	'subject' => 'My ' . $change . ' has changed and I didn\'t request it',
 	'from' => $email
-)) ?> as soon as possible.</p>
+)) . ' ' . __('tan pronto como sea posible', true);
+?></p>

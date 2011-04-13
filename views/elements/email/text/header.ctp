@@ -2,8 +2,8 @@
 if (!isset($emailData['MiEmail']['type']) || !in_array($emailData['MiEmail']['type'], array('normal', 'newsletter_copy'))) {
 	return;
 }
+echo __('Ver este email correctamente aquí', true);
 ?>
-See this email in glorious technicolor here:
 
 <?php
 if ($emailData['MiEmail']['type'] == 'normal') {
